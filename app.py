@@ -6,10 +6,10 @@ import os
 cwd = os.getcwd()
 
 # Save the model paths to a list
-model1 = r"C:\Users\Administrator\Downloads\tit2\xgb_model(1).sav"
-model2 = r"C:\Users\Administrator\Downloads\tit2\logreg_model(2).sav"
-model3 = r"C:\Users\Administrator\Downloads\tit2\svm_model(1).sav"
-model4 = r"C:\Users\Administrator\Downloads\tit2\dnn_model.sav"
+model1 = "xgb_model(1).sav"
+model2 = "logreg_model(2).sav"
+model3 = "svm_model(1).sav"
+model4 = "xgb_model(1).sav"
 
 models = [model1, model2, model3, model4]
 
