@@ -53,7 +53,8 @@ study_time_mapping = {
 reason_mapping = {
     'course preference': 0, 'other': 1, 'close to home': 2, 'school reputation': 3
 }
-st.title("STUDENT SUCCESS PREDICTOR")
+st.title("STUDENT SUCCESS PREDICTOR :mortar_board:")
+st.info('Please fill the form below', icon="ℹ️")
 col1, col2, col3 = st.columns(3)
 with col1:
     age = st.text_input('Enter your age: ')
