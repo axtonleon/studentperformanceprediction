@@ -107,6 +107,8 @@ if st.button('Predict'):
     # creating a DataFrame object
     df = pd.DataFrame(dets)
     print(df.shape)
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(df)
 
     loaded_model = pk.load(open(model_path, 'rb'))
     y_pred = loaded_model.predict(df)
