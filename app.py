@@ -112,7 +112,7 @@ if st.button('Predict'):
 
     loaded_model = pk.load(open(model_path, 'rb'))
     y_pred = loaded_model.predict(df)
-    if model_path == r"C:\Users\Administrator\Downloads\tit2\svm_model(1).sav":
+    if model_path == "svm_model(1).sav":
         if y_pred == 1:
             st.write("""
                 We predict you are going to PASS.
