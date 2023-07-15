@@ -58,24 +58,24 @@ st.info('Please fill the form below', icon="ℹ️")
 col1, col2, col3 = st.columns(3)
 with col1:
     age = st.text_input('Enter your age: ')
-    Medu = st.selectbox('Enter your mother\'s education level: ',
+    Medu = st.radio('Enter your mother\'s education level: ',
                         ("none", "primary education", "secondary education", "higher education"))
-    Fedu = st.selectbox('Enter your father\'s education level: ',
+    Fedu = st.radio('Enter your father\'s education level: ',
                         ("none", "primary education", "secondary education", "higher education"))
     
     Medu = education_level_mapping[Medu]
     Fedu = education_level_mapping[Fedu]
 with col2:
-    failures = st.selectbox('How often do you fail?: ', ("very low", "low", "moderate", "high", "very high"))
-    sex_M = st.selectbox('Enter your sex: ', ("Male", "Female"))
-    reason = st.selectbox('Your reason for attending Your school of choice: ', ('close to home', 'school reputation', 'course preference','other'))
+    failures = st.radio('How often do you fail?: ', ("very low", "low", "moderate", "high", "very high"))
+    sex_M = st.radio('Enter your sex: ', ("Male", "Female"))
+    reason = st.radio('Your reason for attending Your school of choice: ', ('close to home', 'school reputation', 'course preference','other'))
     reason = reason_mapping[reason]
     failures = failure_mapping[failures]
     sex_M = sex_mapping[sex_M]
 with col3:
-    study_time = st.selectbox('How often do you study per day: ', ("less than 2 hours", "2 to 5 hours","Greater than 10 hours" ))
-    higher_yes = st.selectbox('Do you like your course of study: ', ("Yes", "No"))
-    Mjob = st.selectbox('Enter your school sponsors profession: ',
+    study_time = st.radio('How often do you study per day: ', ("less than 2 hours", "2 to 5 hours","Greater than 10 hours" ))
+    higher_yes = st.radio('Do you like your course of study: ', ("Yes", "No"))
+    Mjob = st.radio('Enter your school sponsors profession: ',
                         ("teacher", "health care related", "civil services", "other"))
     Mjob = mjob_mapping[Mjob]
     study_time = study_time_mapping[study_time]
